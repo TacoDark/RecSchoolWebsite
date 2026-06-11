@@ -16,8 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Bubble Phases Logic ---
     const bubblePhases = [
-        "...", "!", "?", "Sup!",
-        "GG", "Wanna play?", "Yoooo!", "Nice!", "Wassup!", "Hello!", "Hi!", "Bye!", "Good Game!",
+        // Short
+        "...", "!", "?", "Sup!", "GG", "Nice!", "Hi!", "Bye!", "Yoooo!", "Wassup!", "Hello!",
+        "Lol", "Bruh", "W", "Ayo!", "Huh?", "Nah", "Bet!", "Fr fr", "Oof", "Sheesh!",
+        // Medium
+        "Wanna play?", "Good Game!", "Let's goooo!", "No way!", "That's crazy!",
+        "I'm so lost rn", "Wait what??", "Join us!", "You're cracked!", "Trust me bro",
+        "This is fire!", "Say less!", "On god!", "My bad lol", "Hold on...",
+        "Not again ", "Bro stop ", "I can't ", "Lowkey goated", "Highkey bussin",
+        // Longer
+        "Yo who built this room??", "Bro this game is so fun!",
+        "Anyone wanna run some games?", "I've been here for 3 hours lol",
+        "This reminds me of the old days", "Rec School is the future fr",
+        "Can someone help me build this?", "Why is my avatar so goofy ",
+        "Just vibing in the lobby rn", "Who wants to do a quest with me?",
+        "I miss the classic Rec Room days", "This community is actually so cool",
+        "Somebody come look at my room!", "How do I get to the paintball arena?",
+        "We need more people for this game!", "This site was made by Ryan. ",
+        "I just made the coolest room ever", "Wait how do you do that emote??",
+        "Let's all meet at the hangout spot", "This update is actually insane!",
     ];
 
     const cubes = document.querySelectorAll('.cube');

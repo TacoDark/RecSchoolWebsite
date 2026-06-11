@@ -202,7 +202,7 @@ h1, h2, h3 {
     padding: 6px 14px;
     border-radius: 20px;
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     box-shadow: 0 4px 0 rgba(0,0,0,0.2);
     animation: bounce 2s infinite;
     z-index: 10;
@@ -214,6 +214,8 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     min-width: 40px;
+    max-width: 260px;
+    white-space: nowrap;
 }
 .talking .bubble {
     opacity: 1;
@@ -353,6 +355,64 @@ footer {
     color: #888888;
 }
 
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #888888;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-link:hover svg {
+    transform: scale(1.15);
+}
+
+/* Platform-specific hover colors */
+.social-link[aria-label="YouTube"]:hover {
+    color: #ff0000;
+    border-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.social-link[aria-label="TikTok"]:hover {
+    color: #00f2ea;
+    border-color: rgba(0, 242, 234, 0.3);
+    background-color: rgba(0, 242, 234, 0.1);
+}
+
+.social-link[aria-label="Discord"]:hover {
+    color: #5865f2;
+    border-color: rgba(88, 101, 242, 0.3);
+    background-color: rgba(88, 101, 242, 0.1);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -411,5 +471,13 @@ footer {
     }
     .about h2, .features h2, .play h2 {
         font-size: 2.2rem;
+    }
+    .social-links {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    .social-link {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
     }
 }
